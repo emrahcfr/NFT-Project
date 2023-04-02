@@ -1,0 +1,298 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Unbounded:wght@200;300;400;500;600;700;800;900&display=swap');
+/* #00ABB3 #3C4048 #B2B2B2 #EAEAEA #18191c*/
+body{
+    padding: 0 60px;
+    background-color: #18191c;
+    color:#EAEAEA ;
+    overflow-x:hidden ;
+    
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 10px;
+    position: sticky;
+    top: 0;
+    background-color: #18191c;
+}
+nav{
+    display: flex;
+    gap: 30px;
+}
+nav a{
+    text-decoration: none;
+    transition: all 0.4s;
+    cursor: pointer;
+
+}
+nav a:hover{
+    color: rgb(244, 18, 240);
+    text-shadow: 2px 2px 20px rgb(244, 18, 240);
+    transition: all 0.4s;   
+}
+header button{
+    cursor: pointer;
+    border: none;
+    padding: 16px 32px;
+    border-radius: 66px;
+    color: #eaeaea;
+    background: linear-gradient(225deg, #ff3cac 0%, #784ba0 50%, #2b86c5 100%);
+
+}
+header button:hover{
+    background: linear-gradient(125deg, #ff3cac 0%, #784ba0 50%, #2b86c5 100%);
+
+}
+header h1{
+    font-family: 'unbounded', cursive;
+}
+.hero{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: space-between;
+    margin: 80px 0;
+}
+.hero .left h1{
+    font-family:inherit ;
+    font-size: 70px;
+    font-weight:800px;
+}
+.hero .left h1 span{
+    color: #21d4fd;
+}
+.hero .left{
+    max-width: 700px;
+
+}
+.left-info{
+    margin-top: 50px;
+    display: flex;
+    gap: 30px;
+}
+.left-info div{
+    background: linear-gradient(120deg, #ff3cac 0%, #784ba0 50%, #2b86c5 100%);
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    font-size: 17px;
+    font-weight: bold;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+}
+.left-info div:hover{
+    background: linear-gradient(240deg, #ff3cac 0%, #784ba0 50%, #2b86c5 100%);
+
+}
+.left-info p{
+    max-width:400px;
+}
+.hero .right{
+    max-width: 700px;
+
+}
+.hero .right img{
+    width: 100%;
+}
+.brands{
+    display: flex;
+    justify-content: space-between;
+    margin: 100px 0;
+    gap: 40px;
+    cursor: pointer;
+}
+.drops-sec{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.drops-sec h1{
+    font-size: 45px;
+    font-family: 'inherit';
+}
+.categories{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    
+}
+.categories li{
+    font-weight: bold;
+    list-style: none;
+    background: gray;
+    padding: 10px 20px;
+    border-radius: 40px;
+    cursor: pointer;
+}
+.categories li:hover{
+    background: linear-gradient(120deg, #ff3cac 0%, #784ba0 50%, #2b86c5 100%);
+}
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+    max-width: 1000px;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 250px;
+    min-height: 400px;
+    background-color: white;
+    color: black;
+    padding: 10px;
+    border-radius: 10px;
+   
+}
+.card-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.card-footer{
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid rgb(192, 192, 192);
+    padding-top: 20px;
+}
+.card-footer p{
+    background-color: rgb(206, 206, 206);
+    color: #8400c1;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+.card-footer button{
+    border: none;
+    background-color: white;
+    font-family:'Poppins';
+    color: #b721ff;
+    cursor: pointer;
+
+}
+.card-footer button:hover{
+    background: linear-gradient(120deg, #ff3cac 0%, #784ba0 50%, #2b86c5 100%);
+    padding: 5px 10px;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+}
+.card-info .price{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.card-info .price img{
+    width: 25px;
+}
+.card-info .price p{
+    color: #b721ff;
+    font-weight: bold;
+}
+.card-info small{
+    font-weight: bolder;
+}
+.card-img{
+    border-radius: 10px;
+    width: 100%;
+}
+.add{
+    background-color: #2b86c5;
+    margin:100px -120px;
+    text-align: center;
+    font-size: 116px;
+    font-weight: bold;
+    transform: rotate(-9deg);
+    letter-spacing: 20px;
+    white-space: nowrap;
+    text-shadow: 2px 2px 15px white;
+    cursor: pointer;
+    /* burayı bir sor */
+    position: relative;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+}
+.info-sec{
+    margin: 200px 0;
+
+}
+.info-sec h1{
+font-size: 48px;
+font-weight: 700px;
+margin-bottom: 30px;
+}
+.info-cards{
+    display: flex;
+    gap: 40px;
+    margin-top: 30px;
+    justify-content: space-between;
+    
+
+}
+.info-card{
+    background-color: #2c0140;
+    border-radius: 15px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 300px;
+}
+.info-card img{
+    width: 50px;
+}
+.nav-button{
+    display: none;
+}
+/* mobil uyumlu yapma/responsive */
+@media(min-width:1300px){
+    .hero .left{
+        max-width: 900px;
+    }
+    .left-info p{
+        max-width: 600px;
+    }
+}
+@media(max-width:1500px){
+    .hero{
+        flex-direction: column;
+    }
+    .hero .left{
+        max-width: 900px;
+    }
+    .hero .right{
+        order: -1;
+    }
+}
+@media(max-width:750px){
+    .cards{
+        justify-content: center;
+    }
+}
+@media(max-width:1000px){
+    .info-cards{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media(max-width:800px){
+    .nav-button{
+        display: block;
+    }
+    nav{
+        display: none;
+    }
+    .contactbtn{
+        display: none;
+    }
+}
